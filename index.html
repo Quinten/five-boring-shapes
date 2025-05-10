@@ -243,14 +243,14 @@ let onF = time => {
         ctx.restore();
     }
     // link
-    ctx.save();
+    /*ctx.save();
     ctx.textAlign = 'left';
     ctx.textBaseline = 'top';
     ctx.fillStyle = '#F4ECD6';
     fontSize = 16 * window.devicePixelRatio;
     ctx.font = fontSize + 'px monospace';
     ctx.fillText('[+..]', fontSize, h - u + fontSize);
-    ctx.restore();
+    ctx.restore();*/
 
     // request next frame
     requestAnimationFrame(onF);
@@ -285,10 +285,10 @@ let gameover = false;
 let handlePointer = (pointerX, pointerY) => {
     let x = 0;
     let y = h - u * 1.5;
-    if (!(pointerX < x || pointerY < y || pointerX > x + u * 1.5 || pointerY > y + u * 1.5)) {
-        window.top.location = 'https://supernapie.com/games/five-boring-shapes';
-        return;
-    }
+    //if (!(pointerX < x || pointerY < y || pointerX > x + u * 1.5 || pointerY > y + u * 1.5)) {
+        //window.top.location = 'https://supernapie.com/games/five-boring-shapes';
+        //return;
+    //}
     x = w - u * 1.5;
     y = 0;
     if (!(pointerX < x || pointerY < y || pointerX > x + u * 1.5 || pointerY > y + u * 1.5)) {
